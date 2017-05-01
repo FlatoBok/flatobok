@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view = "http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        card_view:cardCornerRadius="10dp"
+            android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                card_view:srcCompat="@drawable/aitssam"
+                android:padding="10dp"
+                android:id="@+id/propertImage" />
+
+            <TextView
+                android:text="Name"
+                android:id="@+id/nameText"
+                android:layout_below="@+id/propertImage"
+                android:layout_alignParentLeft="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Your Are Welcome Here IS test \n Come and Join Us "
+                android:id="@+id/textDesc"
+                android:layout_below="@+id/propertImage"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="50dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="30dp"
+                android:text="Price"
+                android:id="@+id/text_Price"
+                android:layout_below="@+id/propertImage"
+                android:layout_alignParentLeft="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
