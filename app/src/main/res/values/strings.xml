@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FlatoBok</string>
+    <string name="title_activity_main_fragments">MainFragments</string>
 </resources>

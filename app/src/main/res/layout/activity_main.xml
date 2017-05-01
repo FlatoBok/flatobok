@@ -58,7 +58,7 @@
     <TextView
         android:id="@+id/textViewLogin"
         android:layout_below="@+id/LinearLayout1"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat"
         android:textAlignment="center"
         android:text="Already Regitered ?\n Click Here To Login"
         android:layout_width="match_parent"
