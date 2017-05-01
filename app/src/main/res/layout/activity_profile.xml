@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/background_floating_material_light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RelativeLayout">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/background_floating_material_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/LinearLayout"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:id="@+id/ll_Profile"
+            android:weightSum="100">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ll_ProfilePic"
+                android:layout_weight="35"
+                android:weightSum="100"
+                android:layout_marginLeft="10dp">
+                <ImageView
+                    android:id="@+id/img_profilePic"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="75"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/aitssam" />
+                <Button
+                    android:text="Change Picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/btn_changePic"
+                    android:layout_weight="25"
+                    android:clickable="true"
+                    android:textColor="#333"
+                    android:textSize="12dp"
+                    android:background="?attr/selectableItemBackgroundBorderless" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/ll_profileDetail"
+                android:layout_weight="65"
+                android:weightSum="100">
+
+                <TextView
+                    android:text="Aitssam Rabbani"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/tv_username"
+                    android:layout_weight="25"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#333"
+                    android:gravity="center_vertical"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/ll_name"
+            android:weightSum="100"
+            android:gravity="center">
+            <TextView
+                android:text="NAME"
+                android:textColor="#333"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30" />
+            <EditText
+                android:inputType="text"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:id="@+id/et_UserName"
+                android:layout_weight="70"
+                android:textSize="12dp"
+                android:textColor="#333"
+                android:gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:textColorHint="#bbb"
+                android:hint="Enter your name"
+                android:text="Aitssam"
+                android:clickable="false"
+                android:focusable="false"
+                android:editable="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/ll_email"
+            android:weightSum="100"
+            android:gravity="center">
+            <TextView
+                android:text="EMAIL"
+                android:textColor="#333"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30" />
+            <EditText
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:id="@+id/et_Email"
+                android:layout_weight="70"
+                android:textSize="12dp"
+                android:textColor="#333"
+                android:gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:textColorHint="#bbb"
+                android:hint="Enter your email address"
+                android:inputType="textEmailAddress"
+                android:text="aitssam@flatobok.com"
+                android:clickable="false"
+                android:focusable="false"
+                android:editable="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/ll_business"
+            android:weightSum="100"
+            android:gravity="center">
+            <TextView
+                android:text="BUSINESS LOCATION"
+                android:id="@+id/tv_businessLocation"
+                android:textColor="#333"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30" />
+            <EditText
+                android:inputType="text"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:id="@+id/et_BusinessLocation"
+                android:layout_weight="70"
+                android:textSize="12dp"
+                android:textColor="#333"
+                android:gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:textColorHint="#bbb"
+                android:hint="Enter your business location"
+                android:text="None"
+                android:clickable="false"
+                android:focusable="false"
+                android:editable="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:id="@+id/ll_changePassword"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+            <Button
+                android:text="CHANGE PASSWORD"
+                android:id="@+id/btn_changePassword"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:textColor="#333"
+                android:textSize="15dp"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/ll_btnEdit"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:text="EDIT PROFILE"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_edit"
+            android:textColor="#333"
+            android:textSize="15dp"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/ll_buttons"
+        android:weightSum="100"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:id="@+id/ll_btnCancel"
+            android:layout_width="0dp"
+            android:layout_weight="50">
+            <Button
+                android:text="CANCEL"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_cancel"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:textColor="#333"
+                android:textSize="15dp"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/ll_btnSave"
+            android:layout_weight="50">
+            <Button
+                android:text="SAVE"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_save"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:textSize="15dp"
+                android:textColor="#333"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
